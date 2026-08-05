@@ -1,14 +1,14 @@
 [
   {
     "type": "release",
-    "versionCode": 1332,
-    "versionName": "1.0.10",
+    "versionCode": 1333,
+    "versionName": "1.0.11",
     "date": "2026-08-05",
     "description": [
-      { "lang": "pt", "text": "Reverte build para universal (-Darch=all), a pedido do usuario" },
-      { "lang": "en", "text": "Reverte build para universal (-Darch=all), a pedido do usuario" }
+      { "lang": "pt", "text": "Corrige icones do menu (sempre dourado, sem alpha) e barra lateral cinza; baixa dependencias obrigatorias de mods automaticamente; versao nova instala em pt_BR; adiciona estimativa de FPS por aparelho" },
+      { "lang": "en", "text": "Corrige icones do menu (sempre dourado, sem alpha) e barra lateral cinza; baixa dependencias obrigatorias de mods automaticamente; versao nova instala em pt_BR; adiciona estimativa de FPS por aparelho" }
     ],
-    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v10/goldapple-mobile-launcher-1.0.10.apk",
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v11/goldapple-mobile-launcher-1.0.11.apk",
     "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
   }
 ]
