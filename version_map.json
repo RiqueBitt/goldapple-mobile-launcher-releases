@@ -1,0 +1,14 @@
+[
+  {
+    "type": "release",
+    "versionCode": 7,
+    "versionName": "1.0.7",
+    "date": "2026-08-05",
+    "description": [
+      { "lang": "pt", "text": "Corrige checagem de atualizacao (feed proprio + versionCode dinamico), adiciona modo streamer" },
+      { "lang": "en", "text": "Corrige checagem de atualizacao (feed proprio + versionCode dinamico), adiciona modo streamer" }
+    ],
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v7/goldapple-mobile-launcher-1.0.7-all.apk",
+    "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
+  }
+]
