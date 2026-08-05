@@ -1,14 +1,14 @@
 [
   {
     "type": "release",
-    "versionCode": 1331,
-    "versionName": "1.0.9",
+    "versionCode": 1332,
+    "versionName": "1.0.10",
     "date": "2026-08-05",
     "description": [
-      { "lang": "pt", "text": "Corrige build por ABI: adiciona clean entre builds (evitava mistura de conteudo nativo) e simplifica nome/URL do APK principal" },
-      { "lang": "en", "text": "Corrige build por ABI: adiciona clean entre builds (evitava mistura de conteudo nativo) e simplifica nome/URL do APK principal" }
+      { "lang": "pt", "text": "Reverte build para universal (-Darch=all), a pedido do usuario" },
+      { "lang": "en", "text": "Reverte build para universal (-Darch=all), a pedido do usuario" }
     ],
-    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v9/goldapple-mobile-launcher-1.0.9.apk",
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v10/goldapple-mobile-launcher-1.0.10.apk",
     "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
   }
 ]
