@@ -1,14 +1,14 @@
 [
   {
     "type": "release",
-    "versionCode": 1338,
-    "versionName": "1.0.16",
+    "versionCode": 1339,
+    "versionName": "1.0.17",
     "date": "2026-08-06",
     "description": [
-      { "lang": "pt", "text": "Adiciona card de status do aparelho na tela inicial (RAM, armazenamento livre, FPS estimado)\n\nReaproveita o DevicePerformanceEstimator ja usado na tela de instalar\nversao. So le informacoes publicas do Android (RAM total, espaco livre,\nnucleos de CPU), nao pede nenhuma permissao. Fica no mesmo estilo de card\nneutro dos outros elementos da tela inicial." },
-      { "lang": "en", "text": "Adiciona card de status do aparelho na tela inicial (RAM, armazenamento livre, FPS estimado)\n\nReaproveita o DevicePerformanceEstimator ja usado na tela de instalar\nversao. So le informacoes publicas do Android (RAM total, espaco livre,\nnucleos de CPU), nao pede nenhuma permissao. Fica no mesmo estilo de card\nneutro dos outros elementos da tela inicial." }
+      { "lang": "pt", "text": "Caixas de menu ficam escuras no modo escuro, com texto dourado (pedido explicito)\n\nbg_container_white / bg_container_white_clickable: eram sempre brancas\n(@android:color/white fixo), mesmo no modo escuro do sistema \u2014 usadas em\nquase 40 telas (listas de mods, modpacks, versoes, pacotes de recursos\netc). Agora usam card_surface_color (branco no modo claro, cinza escuro no\nmodo escuro).\n\nTheme.getAutoTint(): no modo escuro passa a retornar a propria cor de\ndestaque (dourado) em vez do preto/branco calculado por luminancia \u2014 a\npedido do usuario, pra combinar com as caixas agora escuras. No modo claro\nnao muda nada. Efeito: texto/icone 'tema-reativo' (usado na interface\ninteira: dialogos, configuracoes, switches, listas de download) fica\ndourado no modo escuro.\n\nExcecao deliberada: FCLTabLayout (texto das abas/categorias como Mods,\nPacotes de recursos) para de usar getAutoTint() e passa a usar uma cor\nfixa neutra (tab_text_color) \u2014 o usuario tinha pedido explicitamente, na\nmensagem anterior, pra esse texto especifico NUNCA ficar dourado mesmo\nquando selecionado. Sem essa excecao a mudanca acima teria revertido\naquele fix." },
+      { "lang": "en", "text": "Caixas de menu ficam escuras no modo escuro, com texto dourado (pedido explicito)\n\nbg_container_white / bg_container_white_clickable: eram sempre brancas\n(@android:color/white fixo), mesmo no modo escuro do sistema \u2014 usadas em\nquase 40 telas (listas de mods, modpacks, versoes, pacotes de recursos\netc). Agora usam card_surface_color (branco no modo claro, cinza escuro no\nmodo escuro).\n\nTheme.getAutoTint(): no modo escuro passa a retornar a propria cor de\ndestaque (dourado) em vez do preto/branco calculado por luminancia \u2014 a\npedido do usuario, pra combinar com as caixas agora escuras. No modo claro\nnao muda nada. Efeito: texto/icone 'tema-reativo' (usado na interface\ninteira: dialogos, configuracoes, switches, listas de download) fica\ndourado no modo escuro.\n\nExcecao deliberada: FCLTabLayout (texto das abas/categorias como Mods,\nPacotes de recursos) para de usar getAutoTint() e passa a usar uma cor\nfixa neutra (tab_text_color) \u2014 o usuario tinha pedido explicitamente, na\nmensagem anterior, pra esse texto especifico NUNCA ficar dourado mesmo\nquando selecionado. Sem essa excecao a mudanca acima teria revertido\naquele fix." }
     ],
-    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v16/goldapple-mobile-launcher-1.0.16.apk",
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v17/goldapple-mobile-launcher-1.0.17.apk",
     "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
   }
 ]
