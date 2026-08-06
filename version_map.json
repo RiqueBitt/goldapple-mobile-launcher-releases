@@ -1,14 +1,14 @@
 [
   {
     "type": "release",
-    "versionCode": 1333,
-    "versionName": "1.0.11",
-    "date": "2026-08-05",
+    "versionCode": 1334,
+    "versionName": "1.0.12",
+    "date": "2026-08-06",
     "description": [
-      { "lang": "pt", "text": "Corrige icones do menu (sempre dourado, sem alpha) e barra lateral cinza; baixa dependencias obrigatorias de mods automaticamente; versao nova instala em pt_BR; adiciona estimativa de FPS por aparelho" },
-      { "lang": "en", "text": "Corrige icones do menu (sempre dourado, sem alpha) e barra lateral cinza; baixa dependencias obrigatorias de mods automaticamente; versao nova instala em pt_BR; adiciona estimativa de FPS por aparelho" }
+      { "lang": "pt", "text": "Corrige barra lateral dourada: leftMenu nao usa mais a cor de destaque como fundo\n\nA cor de destaque (dourado) so deve aparecer em icones/botoes, nunca em fundo\nde menu. O codigo em MainActivity.kt sobrescrevia o background do leftMenu\ncom a cor de destaque (ThemeEngine...getColor()) toda vez que o tema era\nregistrado, ignorando qualquer ajuste feito em ui_bg_color no colors.xml.\nIsso explicava dois bugs reportados: a barra lateral sempre aparecendo\namarela (os fixes anteriores em colors.xml nunca tinham efeito visual) e\nos icones sumindo (icone dourado sobre fundo dourado).\n\nAgora o fundo do leftMenu usa ui_bg_color (cinza fixo) diretamente, sem\nreagir a mudanca de tema." },
+      { "lang": "en", "text": "Corrige barra lateral dourada: leftMenu nao usa mais a cor de destaque como fundo\n\nA cor de destaque (dourado) so deve aparecer em icones/botoes, nunca em fundo\nde menu. O codigo em MainActivity.kt sobrescrevia o background do leftMenu\ncom a cor de destaque (ThemeEngine...getColor()) toda vez que o tema era\nregistrado, ignorando qualquer ajuste feito em ui_bg_color no colors.xml.\nIsso explicava dois bugs reportados: a barra lateral sempre aparecendo\namarela (os fixes anteriores em colors.xml nunca tinham efeito visual) e\nos icones sumindo (icone dourado sobre fundo dourado).\n\nAgora o fundo do leftMenu usa ui_bg_color (cinza fixo) diretamente, sem\nreagir a mudanca de tema." }
     ],
-    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v11/goldapple-mobile-launcher-1.0.11.apk",
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v12/goldapple-mobile-launcher-1.0.12.apk",
     "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
   }
 ]
