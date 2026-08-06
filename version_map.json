@@ -1,14 +1,14 @@
 [
   {
     "type": "release",
-    "versionCode": 1334,
-    "versionName": "1.0.12",
+    "versionCode": 1335,
+    "versionName": "1.0.13",
     "date": "2026-08-06",
     "description": [
-      { "lang": "pt", "text": "Corrige barra lateral dourada: leftMenu nao usa mais a cor de destaque como fundo\n\nA cor de destaque (dourado) so deve aparecer em icones/botoes, nunca em fundo\nde menu. O codigo em MainActivity.kt sobrescrevia o background do leftMenu\ncom a cor de destaque (ThemeEngine...getColor()) toda vez que o tema era\nregistrado, ignorando qualquer ajuste feito em ui_bg_color no colors.xml.\nIsso explicava dois bugs reportados: a barra lateral sempre aparecendo\namarela (os fixes anteriores em colors.xml nunca tinham efeito visual) e\nos icones sumindo (icone dourado sobre fundo dourado).\n\nAgora o fundo do leftMenu usa ui_bg_color (cinza fixo) diretamente, sem\nreagir a mudanca de tema." },
-      { "lang": "en", "text": "Corrige barra lateral dourada: leftMenu nao usa mais a cor de destaque como fundo\n\nA cor de destaque (dourado) so deve aparecer em icones/botoes, nunca em fundo\nde menu. O codigo em MainActivity.kt sobrescrevia o background do leftMenu\ncom a cor de destaque (ThemeEngine...getColor()) toda vez que o tema era\nregistrado, ignorando qualquer ajuste feito em ui_bg_color no colors.xml.\nIsso explicava dois bugs reportados: a barra lateral sempre aparecendo\namarela (os fixes anteriores em colors.xml nunca tinham efeito visual) e\nos icones sumindo (icone dourado sobre fundo dourado).\n\nAgora o fundo do leftMenu usa ui_bg_color (cinza fixo) diretamente, sem\nreagir a mudanca de tema." }
+      { "lang": "pt", "text": "Audita e corrige outros vazamentos de cor dourada em fundos (card de avisos, barra de caminho do navegador de arquivos)\n\nMesma classe de bug do fix anterior no leftMenu: o card de avisos na tela\ninicial (MainUI) e a barra do caminho atual no navegador de arquivos\n(FileBrowserActivity) tinham o fundo inteiro pintado com a cor de destaque\n(dourado) via ThemeEngine, em vez de usar uma cor neutra fixa. Adicionado\ncard_surface_color ao modulo FCL (reaproveitando o padrao ja usado no\nFCLLibrary) e aplicado nos dois lugares.\n\nAuditados e confirmados como uso legitimo de dourado (nao alterados):\nselecao de item em lista (DatapackListAdapter), cursor de texto\n(FCLEditText), pill de notificacao (FCLDynamicIsland) - todos comportamentos\ntipo botao/selecao, nao fundo de menu/card." },
+      { "lang": "en", "text": "Audita e corrige outros vazamentos de cor dourada em fundos (card de avisos, barra de caminho do navegador de arquivos)\n\nMesma classe de bug do fix anterior no leftMenu: o card de avisos na tela\ninicial (MainUI) e a barra do caminho atual no navegador de arquivos\n(FileBrowserActivity) tinham o fundo inteiro pintado com a cor de destaque\n(dourado) via ThemeEngine, em vez de usar uma cor neutra fixa. Adicionado\ncard_surface_color ao modulo FCL (reaproveitando o padrao ja usado no\nFCLLibrary) e aplicado nos dois lugares.\n\nAuditados e confirmados como uso legitimo de dourado (nao alterados):\nselecao de item em lista (DatapackListAdapter), cursor de texto\n(FCLEditText), pill de notificacao (FCLDynamicIsland) - todos comportamentos\ntipo botao/selecao, nao fundo de menu/card." }
     ],
-    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v12/goldapple-mobile-launcher-1.0.12.apk",
+    "url": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/download/v13/goldapple-mobile-launcher-1.0.13.apk",
     "netdiskUrl": "https://github.com/RiqueBitt/goldapple-mobile-launcher-releases/releases/latest"
   }
 ]
